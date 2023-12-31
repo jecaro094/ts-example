@@ -4,10 +4,12 @@
 build:
 	./node_modules/.bin/tsc
 
-live:
+live-:
 	tsc -w
 
 run:
 	node ./dist/index.js
 
 all: build run
+
+live: build live-

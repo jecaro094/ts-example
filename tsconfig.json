@@ -1,9 +1,18 @@
 {
-    "compilerOptions": {
-    "lib": ["es2015"], 
-    "module": "commonjs", 
-    "outDir": "./dist", 
-    "rootDir": "./src", 
-    "strict": true, 
-}
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "CommonJS",
+    "lib": ["dom", "es2015"],
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    // "jsx": "react", // If you are using React, otherwise remove this line
+    "outDir": "./dist", // Adjust the output directory as needed
+    "rootDir": "./src" // Adjust the root directory of your source code as needed
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
